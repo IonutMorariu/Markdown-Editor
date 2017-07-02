@@ -1,0 +1,32 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/demo.css" />
+  <title>Markdown Editor</title>
+  <script src="js/Markdown.Converter.js"></script>
+  <script src="js/Markdown.Editor.js"></script>
+  <script src="js/Markdown.Sanitizer.js"></script>
+</head>
+<body>
+  <div id="wmd-button-bar"></div>
+
+  <textarea id="wmd-input" class="wmd-input"></textarea>
+
+  <div id="wmd-preview" class="wmd-panel wmd-preview"></div>
+
+
+
+
+
+
+  <script>
+      var converter = Markdown.getSanitizingConverter();
+      var editor = new Markdown.Editor(converter);
+      editor.run();
+</script>
+
+</body>
+</html>
